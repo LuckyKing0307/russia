@@ -40,14 +40,14 @@
                 <div class="btn">
                     <img src="{{url('/img/btn.svg')}}" alt="Image" class="btn_bg"/>
                     <div class="time">20:30</div>
-                    <div class="date">13-14 fevral</div>
+                    <div class="date">16-17 fevral</div>
                 </div>
             </div>
             <div class="main_mob">
                 <div class="btn">
                     <img src="{{url('/img/btn_mb.svg')}}" alt="Image" class="btn_bg"/>
                     <div class="time">20:30</div>
-                    <div class="date">13-14 fevral</div>
+                    <div class="date">16-17 fevral</div>
                 </div>
                 <div class="btn">
                     <img src="{{url('/img/btn_mb.svg')}}" alt="Image" class="btn_bg"/>
