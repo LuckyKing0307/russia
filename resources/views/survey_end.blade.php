@@ -57,7 +57,7 @@
             <div class="btn">
                 <img src="{{url('/img/img_end.svg')}}" alt="Image" class="btn_bg end_bg"/>
                 <div class="time">20:30</div>
-                <div class="date">16-17 fevral</div>
+                <div class="date">16-17 fevral </div>
             </div>
         </div>
         <div class="main_mob">
