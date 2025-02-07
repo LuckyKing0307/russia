@@ -403,4 +403,9 @@ body{
     .form>label{
         margin-top: 20px;
     }
+    .end_link{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }

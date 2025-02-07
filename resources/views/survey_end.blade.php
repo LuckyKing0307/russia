@@ -78,9 +78,11 @@
         <div class="title end_title_info     title_mb">
             Bepul darsda qatnashish  <br>uchun, yopiq telegram  <br>kanalimizga obuna bo'ling!
         </div>
-        <img src="{{url('/img/link.svg')}}" class="link">
+        <div class="end_link">
+            <img src="{{url('/img/link.svg')}}" class="link">
+        </div>
         <a class="reg_btn end_btn_reg" href="https://t.me/+7mKPFzWw3JQ4MmY6" target="_blank">Kanalga qo’shilish</a>
-        <img src="{{url('/img/img_4.png')}}" alt="" class="chel_btn">
+        <img src="{{url('/img/img_4.png')}}" alt="" class="chel_btn" style="width: 100%;">
     </div>
 </div>
 </body>
