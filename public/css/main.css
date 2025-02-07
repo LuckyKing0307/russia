@@ -363,7 +363,7 @@ body{
         line-height: 40px;
     }
     .title_mb:before{
-        left: -5%;
+        left: 0;
     }
     .reg_btns{
         display: none;
