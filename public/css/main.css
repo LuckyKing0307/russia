@@ -272,6 +272,11 @@ body{
 .exit_btn:hover{
     cursor: pointer;
 }
+.end_link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 @media (min-width: 1500px) {
     body{
         zoom: 0.76;
@@ -402,10 +407,5 @@ body{
     }
     .form>label{
         margin-top: 20px;
-    }
-    .end_link{
-        width: 100%;
-        display: flex;
-        justify-content: center;
     }
 }
