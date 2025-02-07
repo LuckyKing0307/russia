@@ -85,7 +85,7 @@
                 </div>
             </div>
         </div>
-        <div class="formed">
+        <div class="formed" style="display: none;">
             <div class="bg_formed"></div>
             <form action="{{route('user.reg')}}" method="post" class="form">
                <img src="{{url('/img/exit.svg')}}" class="exit_btn" onclick="openFrom()">
