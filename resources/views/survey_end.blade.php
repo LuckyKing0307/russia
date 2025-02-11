@@ -43,25 +43,25 @@
 </head>
 <body>
 <div class="container end_con">
-    <img src="{{url('/img/img_3.webp')}}" class="end_img_chel">
+    <img src="{{url('/img/img_3.webp')}}" class="end_img_chel" loading="lazy">
     <div class="end_chel">
     </div>
     <div class="end_info">
         <div class="main_btns end_btns_info">
             <div class="btn">
-                <img src="{{url('/img/img_end.svg')}}" alt="Image" class="btn_bg end_bg"/>
+                <img src="{{url('/img/img_end.svg')}}" alt="Image" class="btn_bg end_bg" loading="lazy"/>
                 <div class="time">20:30</div>
                 <div class="date">16-17 fevral </div>
             </div>
         </div>
         <div class="main_mob">
             <div class="btn end_information">
-                <img src="{{url('/img/img_end.png')}}" alt="Image" class="btn_bg"/>
+                <img src="{{url('/img/img_end.png')}}" alt="Image" class="btn_bg" loading="lazy"/>
                 <div class="time end_text">20:30</div>
                 <div class="date end_data">16-17 fevral</div>
             </div>
             <div class="btn end_information">
-                <img src="{{url('/img/img_end.png')}}" alt="Image" class="btn_bg"/>
+                <img src="{{url('/img/img_end.png')}}" alt="Image" class="btn_bg" loading="lazy"/>
                 <div class="time end_text">Bepul</div>
                 <div class="date end_data">Vebinar narxi</div>
             </div>
@@ -73,7 +73,7 @@
             Bepul darsda qatnashish  <br>uchun, yopiq telegram  <br>kanalimizga obuna bo'ling!
         </div>
         <div class="end_link">
-            <img src="{{url('/img/link.png')}}" class="link">
+            <img src="{{url('/img/link.png')}}" class="link" loading="lazy">
         </div>
         <a class="reg_btn end_btn_reg" href="https://t.me/+7mKPFzWw3JQ4MmY6" target="_blank">Kanalga qo’shilish</a>
         <img src="{{url('/img/img_4.webp')}}" alt="" class="chel_btn" style="width: 100%;">
