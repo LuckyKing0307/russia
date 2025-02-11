@@ -4,17 +4,51 @@
     padding: 0;
 }
 body{
+    font-family: "Bebas Neue", serif;
+}
+header{
+    padding-top: 100px;
+    width: 100%;
     position: relative;
     background-image: url("../img/bg.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 0;
-    font-family: "Bebas Neue", serif;
+    z-index: 0;
+    padding-bottom: 100px;
 }
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    display: block;
+    display: flex;
+    flex-direction: column;
+}
+header>.container{
+    min-height: 100% !important;
+}
+.marquee-container {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    padding: 20px 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.marquee {
+    display: flex;
+    min-width: 200%;
+    animation: marquee 10s linear infinite;
+}
+.marquee span {
+    padding-right: 50px;
+}
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
 }
 .btn{
     position: relative;
@@ -57,28 +91,49 @@ body{
     line-height: 66px;
     text-align: left;
 }
-.title:before{
-    content: '';
-    position: absolute;
-    width: 125px;
-    height: 95px;
-    background-image: url("../img/russian_flag.webp");
-    background-size: cover;
-    top: -80px;
-    left: -35px;
-    z-index: -1;
-}
+/*.title:before{*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    width: 125px;*/
+/*    height: 95px;*/
+/*    background-image: url("../img/russian_flag.webp");*/
+/*    background-size: cover;*/
+/*    top: -80px;*/
+/*    left: -35px;*/
+/*    z-index: -1;*/
+/*}*/
 .title>span{
     color: #EA2020;
 }
 .list_guest{
     margin-top: 70px;
+    background-color: #FDE9E9;
+    display: block;
+    max-width: 50%;
+    border-radius: 20px;
+    padding: 20px 30px;
 }
-.list_title{
-    font-family: "Poppins", serif;
-    font-size: 28px;
-    font-weight: 600;
+.list_titled{
+    font-family: "Inter", serif;
+    font-size: 22px;
+    font-weight: 500;
     text-align: left;
+}
+.list_content{
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content_list_title{
+    text-align: center;
+    font-family: "Inter", serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 .list_items{
     margin-top: 40px;
@@ -100,12 +155,19 @@ body{
     margin-top: 100px;
     display: flex;
 }
+.section_title{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
 .reg_btn{
+    margin-top: 100px;
+    font-family: "Bebas Neue", sans-serif;
+    width: 100%;
     display: block;
     background: #EA2020;
-    border-radius: 12px;
-    padding: 24px 60px;
-    font-family: "Bebas Neue";
+    border-radius: 24px;
+    padding: 21px;
     font-size: 38px;
     font-weight: 400;
     color: #fff;
@@ -139,7 +201,7 @@ body{
     width: 1058px;
     right: 0;
     bottom: 0;
-    position: fixed;
+    position: absolute;
     z-index: -1;
 }
 .main_mob,.title_mb,.chel_btn{
@@ -243,6 +305,37 @@ body{
     font-family: "Poppins";
     font-size: 16px;
     font-weight: 400;
+}
+.dop_info{
+    padding: 50px 0;
+    background-color: #fff;
+}
+.section_title{
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+.section_content{
+    margin-top: 34px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.content_item{
+    background-color: #EEF4FD;
+    width: 30%;
+    padding: 20px;
+    border-radius: 24px;
+}
+.content_item>img{
+    width: 38px;
+}
+.content_item>p{
+    font-family: 'Inter',sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
 
 }
 .form_btn{
@@ -288,8 +381,14 @@ body{
 @media (max-width: 900px) {
     body{
         overflow: auto;
+    }
+    .dop_info{
+        padding: 25px 0;
+    }
+    header{
         background: rgb(195,213,246);
         background: linear-gradient(rgba(195,213,246,1) 29%, rgba(244,239,244,1) 71%);
+        padding-bottom: 25px;
     }
     .container{
         width: 100%;
@@ -299,6 +398,8 @@ body{
     }
     .form{
         width: 90%;
+    }
+    .list_guest{
     }
     .main_mob{
         width: 100%;
@@ -310,8 +411,34 @@ body{
         height: 80px;
         padding-top: 15px;
     }
+    .section_title{
+        font-size: 24px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .section_content{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .content_item{
+        margin-top: 12px;
+        width: 95%;
+        padding: 16px;
+        padding-right: 0;
+        display: flex;
+    }
+    .content_item>img{
+        width: 28px;
+        height: 28px;
+    }
+    .content_item>p{
+        font-family: Inter;
+        font-size: 16px;
+        margin-left: 6px;
+    }
     .time{
-        font-size: 32px;
+        font-size: 22px;
         font-weight: 400;
         line-height: 30px;
         text-transform: uppercase;
@@ -357,12 +484,14 @@ body{
     .title_mb{
         text-align: center;
         display: block;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
-        margin-top: 100px;
-        font-size: 40px;
+        font-size: 28px;
         font-weight: 400;
-        line-height: 40px;
+        line-height: 28px;
+    }
+    .marquee-container{
+        padding: 10px 0;
     }
     .title_mb:before{
         left: 0;
@@ -382,8 +511,24 @@ body{
     }
     .list_guest{
         margin: 0 auto;
-        margin-top: 40px;
-        width: 95%;
+        max-width: 95%;
+        padding: 18px 27px;
+        text-align: center;
+    }
+    .content_list_title{
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .reg_btn{
+        padding: 14px;
+        margin-top: 20px;
+        font-size: 24px;
+    }
+    .list_titled{
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 14px;
     }
     .list_title{
         font-size: 22px;

@@ -5,10 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Naimix Xususiy Bandlik Agentligi</title>
-
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('css/main.css') }}">
         <!-- Meta Pixel Code -->
         <script>
@@ -29,56 +27,67 @@
         <!-- End Meta Pixel Code -->
     </head>
     <body>
+    <div class="marquee-container">
+        <div class="marquee">
+            <span class="time">20:30 16-17 fevral</span>
+            <span class="time">20:30 16-17 fevral</span>
+            <span class="time">20:30 16-17 fevral</span>
+            <span class="time">20:30 16-17 fevral</span>
+            <span class="time">20:30 16-17 fevral</span>
+            <span class="time">20:30 16-17 fevral</span>
+            <span class="time">20:30 16-17 fevral</span>
+            <span class="time">20:30 16-17 fevral</span>
+            <span class="time">20:30 16-17 fevral</span>
+            <span class="time">20:30 16-17 fevral</span>
+            <span class="time">20:30 16-17 fevral</span>
+            <span class="time">20:30 16-17 fevral</span>
+            <span class="time">20:30 16-17 fevral</span>
+            <span class="time">20:30 16-17 fevral</span>
+            <span class="time">20:30 16-17 fevral</span>
+        </div>
+    </div>
+    <header>
         <div class="container">
-            <div class="main_btns">
-                <div class="btn">
-                    <img src="{{url('/img/btn.png')}}" alt="Image" class="btn_bg" loading="lazy"/>
-                    <div class="time">20:30</div>
-                    <div class="date">16-17 fevral</div>
-                </div>
-            </div>
-            <div class="main_mob">
-                <div class="btn">
-                    <img src="{{url('/img/btn_mb.png')}}" alt="Image" class="btn_bg" loading="lazy"/>
-                    <div class="time">20:30</div>
-                    <div class="date">16-17 fevral</div>
-                </div>
-                <div class="btn">
-                    <img src="{{url('/img/btn_mb.png')}}" alt="Image" class="btn_bg" loading="lazy"/>
-                    <div class="time">Bepul</div>
-                    <div class="date">Vebinar narxi</div>
-                </div>
-            </div>
             <div class="title">
-                Rossiyada <span>800$-1500$</span> qonuniy <br>
-                ishlab topish
+                Rossiyada <span>qonuniy</span> tarzda<br> ishlash va  <span>800$-1500$</span> oylik<br> olish imkoniyati!
             </div>
             <div class="title title_mb">
-                Rossiyada <span>800$-1500$</span> qonuniy
-                ishlab topish
+                Rossiyada <span>qonuniy</span> tarzda ishlash va  <span>800$-1500$</span> oylik olish imkoniyati!
             </div>
             <div class="chel_btn">
                 <img src="{{url('/img/img_2.webp')}}" alt="">
-                <button class="reg_btn" id="mob" onclick="openFrom()">RO’YXATDAN O’TISH</button>
             </div>
             <div class="list_guest">
-                <div class="list_title">
-                    Vebinarda nimalarni o’rganasiz?
+                <div class="list_titled">
+                    Quruvchilik va tikuvchilik yo'nalishida 500 ta ish o'rni ochiq va siz ortiqcha xarajatlarsiz 800-1500$ daromad qilish imkoniyatiga egasiz!
                 </div>
-                <ul class="list_items">
-                    <li class="list_item"><img src="{{url('/img/list.png')}}" alt="" loading="lazy">Rossiyada qonuniy hujjat yeg’ish</li>
-                    <li class="list_item"><img src="{{url('/img/head.png')}}" alt="" loading="lazy">Ish joyini tanlash</li>
-                    <li class="list_item"><img src="{{url('/img/like.png')}}" alt="" loading="lazy">Rossiyada ishlashni qulay tomonlari</li>
-                </ul>
-            </div>
-            <div class="reg_btns">
-                <button class="reg_btn" onclick="openFrom()">RO’YXATDAN O’TISH</button>
-                <div class="vebinar">
-                    <div class="veb_title">Bepul</div>
-                    <div class="veb_text">Vebinar narxi</div>
+                <div class="list_content">
+                    <div class="content_list_title">Ishga joylashish uchun "ro'yxatdan o'tish" tugmasini bosib webinarga qo'shiling</div>
+                    <button class="reg_btn" onclick="openFrom()">RO’YXATDAN O’TISH</button>
                 </div>
             </div>
         </div>
+        <img src="{{url('img/img_1.webp')}}" alt="chel" class="chel" loading="lazy">
+    </header>
+        <section class="dop_info">
+            <div class="container">
+                <div class="section_title">Hali bunaqasi bo'lmagan, bepul webinarda ishga <br> joylashish imkoniyatiga egasiz:</div>
+                <div class="section_content">
+                    <div class="content_item">
+                        <img src="{{url('img/yes.png')}}" alt="">
+                        <p>Rossiyada qonuniy hujjat yeg'ish</p>
+                    </div>
+                    <div class="content_item">
+                        <img src="{{url('img/yes.png')}}" alt="">
+                        <p>Ish joyni tanlash</p>
+                    </div>
+                    <div class="content_item">
+                        <img src="{{url('img/yes.png')}}" alt="">
+                        <p>Rossiyada ishlashni qulay tomonlari</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <div class="formed" style="display: none;">
             <div class="bg_formed"></div>
             <form action="{{route('user.reg')}}" method="post" class="form">
@@ -93,9 +102,7 @@
                 <button class="reg_btn form_btn">RO’YXATDAN O’TISH</button>
             </form>
         </div>
-        <img src="{{url('img/img_1.webp')}}" alt="chel" class="chel" loading="lazy">
-
-    <script>
+        <script>
 
         function openFrom(){
             let form = document.querySelector('.formed');
