@@ -49,7 +49,7 @@
 </head>
 <body>
 <div class="container end_con">
-    <img src="{{url('/img/img_3.png')}}" class="end_img_chel">
+    <img src="{{url('/img/img_3.webp')}}" class="end_img_chel">
     <div class="end_chel">
     </div>
     <div class="end_info">
@@ -82,7 +82,7 @@
             <img src="{{url('/img/link.svg')}}" class="link">
         </div>
         <a class="reg_btn end_btn_reg" href="https://t.me/+7mKPFzWw3JQ4MmY6" target="_blank">Kanalga qo’shilish</a>
-        <img src="{{url('/img/img_4.png')}}" alt="" class="chel_btn" style="width: 100%;">
+        <img src="{{url('/img/img_4.webp')}}" alt="" class="chel_btn" style="width: 100%;">
     </div>
 </div>
 </body>

@@ -64,7 +64,7 @@
                 ishlab topish
             </div>
             <div class="chel_btn">
-                <img src="{{url('/img/img_2.png')}}" alt="">
+                <img src="{{url('/img/img_2.webp')}}" alt="">
                 <button class="reg_btn" id="mob" onclick="openFrom()">RO’YXATDAN O’TISH</button>
             </div>
             <div class="list_guest">
@@ -99,7 +99,7 @@
                 <button class="reg_btn form_btn">RO’YXATDAN O’TISH</button>
             </form>
         </div>
-        <img src="{{url('img/img_1.png')}}" alt="chel" class="chel">
+        <img src="{{url('img/img_1.webp')}}" alt="chel" class="chel">
 
     <script>
 
