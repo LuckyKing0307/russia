@@ -38,19 +38,19 @@
         <div class="container">
             <div class="main_btns">
                 <div class="btn">
-                    <img src="{{url('/img/btn.webp')}}" alt="Image" class="btn_bg"/>
+                    <img src="{{url('/img/btn.png')}}" alt="Image" class="btn_bg"/>
                     <div class="time">20:30</div>
                     <div class="date">16-17 fevral</div>
                 </div>
             </div>
             <div class="main_mob">
                 <div class="btn">
-                    <img src="{{url('/img/btn_mb.webp')}}" alt="Image" class="btn_bg"/>
+                    <img src="{{url('/img/btn_mb.png')}}" alt="Image" class="btn_bg"/>
                     <div class="time">20:30</div>
                     <div class="date">16-17 fevral</div>
                 </div>
                 <div class="btn">
-                    <img src="{{url('/img/btn_mb.webp')}}" alt="Image" class="btn_bg"/>
+                    <img src="{{url('/img/btn_mb.png')}}" alt="Image" class="btn_bg"/>
                     <div class="time">Bepul</div>
                     <div class="date">Vebinar narxi</div>
                 </div>
@@ -72,9 +72,9 @@
                     Vebinarda nimalarni o’rganasiz?
                 </div>
                 <ul class="list_items">
-                    <li class="list_item"><img src="{{url('/img/list.webp')}}" alt="">Rossiyada qonuniy hujjat yeg’ish</li>
-                    <li class="list_item"><img src="{{url('/img/head.webp')}}" alt="">Ish joyini tanlash</li>
-                    <li class="list_item"><img src="{{url('/img/like.webp')}}" alt="">Rossiyada ishlashni qulay tomonlari</li>
+                    <li class="list_item"><img src="{{url('/img/list.png')}}" alt="">Rossiyada qonuniy hujjat yeg’ish</li>
+                    <li class="list_item"><img src="{{url('/img/head.png')}}" alt="">Ish joyini tanlash</li>
+                    <li class="list_item"><img src="{{url('/img/like.png')}}" alt="">Rossiyada ishlashni qulay tomonlari</li>
                 </ul>
             </div>
             <div class="reg_btns">
@@ -88,7 +88,7 @@
         <div class="formed" style="display: none;">
             <div class="bg_formed"></div>
             <form action="{{route('user.reg')}}" method="post" class="form">
-               <img src="{{url('/img/exit.webp')}}" class="exit_btn" onclick="openFrom()">
+               <img src="{{url('/img/exit.png')}}" class="exit_btn" onclick="openFrom()">
                 @csrf
                 <div class="form_title">Ro’yxatdan o’tish</div>
                 <div class="form_text">Pastdagi formani to'ldirishingiz bilan yopiq kanalga qo'shilasiz!</div>
