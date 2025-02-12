@@ -230,6 +230,7 @@ header>.container{
 .end_con{
     max-width: 100%;
     display: flex;
+    flex-direction: row;
 }
 .end_chel{
     width: 50%;
