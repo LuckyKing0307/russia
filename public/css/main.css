@@ -172,11 +172,20 @@ header>.container{
     font-weight: 400;
     color: #fff;
     border: 3px solid #EA2020;
+    animation: moveUpDown 2s infinite ease-in-out;
 }
 .reg_btn:hover{
     cursor: pointer;
     background-color: #fff;
     color: #EA2020;
+}
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
 }
 .vebinar{
     display: flex;
